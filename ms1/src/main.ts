@@ -4,14 +4,9 @@ import { CorsOptions } from '@nestjs/common/interfaces/external/cors-options.int
 import { Transport } from '@nestjs/microservices';
 import {
   APPLICATION_PORT,
-  APPLICATION_VERSION,
   KAFKA_CLIENT_ID,
   KAFKA_GROUP_ID,
   KAFKA_URIS,
-  SWAGGER_DESCRIPTION,
-  SWAGGER_DOCS,
-  SWAGGER_SERVER,
-  SWAGGER_TITLE,
 } from './commons/environment';
 import {
   DocumentBuilder,
@@ -35,10 +30,9 @@ async function bootstrap() {
 
   const swaggerDocumentBuilder = new DocumentBuilder()
     .addBearerAuth()
-    .setTitle(SWAGGER_TITLE)
-    .setDescription(SWAGGER_DESCRIPTION)
-    .setVersion(APPLICATION_VERSION)
-    .addServer(SWAGGER_SERVER)
+    .setTitle('NestJS API Documentation')
+    .setDescription('NestJS API Documentation')
+    .setVersion('1.0')
     .build();
   const swaggerDocumentOptions: SwaggerDocumentOptions = {
     operationIdFactory: (_controllerKey: string, methodKey: string) =>
@@ -50,7 +44,7 @@ async function bootstrap() {
     swaggerDocumentOptions,
   );
 
-  SwaggerModule.setup(SWAGGER_DOCS, app, swaggerDocument);
+  SwaggerModule.setup('api', app, swaggerDocument);
 
   const port = APPLICATION_PORT;
   app.connectMicroservice(

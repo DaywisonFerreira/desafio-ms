@@ -8,6 +8,8 @@ RUN yarn
 
 COPY . .
 
+RUN yarn build
+
 EXPOSE 4000
 
-CMD [ "yarn", "start" ]
+CMD [ "yarn", "start:prod" ]
