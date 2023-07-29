@@ -1,6 +1,6 @@
 import { v4 as uuidV4 } from 'uuid';
 
-export const CreateMessage = (topic: string, payload: any) => {
+export const CreateKafkaMessage = (topic: string, payload: any) => {
   return {
     topic,
     headers: {
