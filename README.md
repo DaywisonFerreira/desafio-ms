@@ -42,7 +42,3 @@ Acesse o endpoint http://localhost:3000/api para interagir com a aplicação.
 Você pode acessar o kafka UI nesse endpoint: http://localhost:8080
 
 ![Kafka-UI](images/kafka.png)
-
-## 📝 Licença
-
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
