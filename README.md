@@ -1,62 +1,46 @@
-<h1 align="center">
-  <br>
-  <img src="https://i.ibb.co/MD8jH60/apptrade-logo.jpg" alt="" width="200">
-  <br>
-  Desafio - Serviços
-  <br>
-</h1>
+# Desafio App Trade
 
-<h4 align="center">Desafio para Seleção de Desenvolvedor Back-End</h4>
+## 💻 Pré-requisitos
+
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+Você instalou o Docker e o docker-compose em sua máquina. Caso ainda não tenha instalado, você pode encontrar as instruções de instalação nos seguintes links:
+
+Docker: https://docs.docker.com/get-docker/
+Docker Compose: https://docs.docker.com/compose/install/
+Você tem uma máquina com suporte ao Docker. O projeto é compatível com sistemas operacionais Windows, Linux e macOS.
+
+## 🚀 Instalação
+
+Para instalar o projeto, siga estas etapas:
+
+Clone o repositório do projeto para a sua máquina:
+```
+git clone https://github.com/DaywisonFerreira/desafio-ms.git
+```
+
+Navegue até o diretório do projeto:
+```
+cd desafio-ms
+```
+
+Execute o seguinte comando para iniciar o projeto usando o Docker Compose:
+```
+docker-compose up -d
+```
 
 
-<p align="center">
-  <a href="#descrição">Descrição</a> •
-  <a href="#requisitos">Requisitos</a> •
-  <a href="#observações">Observações</a> •
-  <a href="#guia">Guia</a>
-</p>
+## ☕ Uso
 
-## Descrição
+Acesse o endpoint http://localhost:3000/api para interagir com a aplicação.
 
-Deverão ser desenvolvidos dois serviços que recebem dados JSON, armazenam em um sistema de mensageria para então ser consumido e armazenado em um banco NoSQL.
+![Exemplo](images/swagger.png)
 
-## Requisitos
+Você pode enviar uma requisição HTTP para os endpoints disponíveis seguindo a documentação do Swagger. O Swagger fornece uma interface interativa que detalha os endpoints disponíveis, os parâmetros necessários, os tipos de resposta e exemplos de requisições.
 
-### Serviço 01
-
-1. Deverá ser desenvolvido em NestJS (Typescript).
-2. Rest ou GraphQL.
-3. Deve ter um endpoint para receber um objeto JSON.
-4. Deve publicar esse objeto para um tópico do Kafka.
-5. Este serviço **NÃO PODE USAR NENHUM BANCO DE DADOS**.
+Siga a documentação do Swagger para explorar e utilizar as funcionalidades do projeto.
 
 
-### Serviço 02
+## 📝 Licença
 
-1. Deverá ser desenvolvido em NestJS (Typescript).
-2. Este serviço deve usar um banco de dados NoSQL (MongoDB ou Cassandra).
-3. Deve consumir e remover objetos no tópico do Kafka.
-4. Os objetos consumidos devem ser inseridos no banco de dados.
-
-### Infraestrutura
-
-1. O banco e os sistemas devem estar containerizados.
-2. Toda a infraestrutura deve estar online na máquina local com, no máximo, 10 comandos em qualquer máquina Linux com Docker instalado.
-3. O Docker deve ser utilizado como base da infraestrutura.
-
-## Observações
-
-* Todos os recursos devem estar nesse único repositório.
-* Não é necessário e não será avaliado nenhum recurso de Front-End.
-* Os padrões de projetos e tecnologias aplicadas serão avaliadas.
-* A modelagem de banco e estratégias de manipulação de dados serão avaliadas.
-* Documentação não é obrigatória, mas a facilidade no uso dos recursos será avaliada e a presença de uma documentação simplificada pode impactar positivamente.
-* A organização do repositório será avaliada.
-* Os commits serão avaliados. Atente-se aos padrões que deseja utilizar.
-
-## Guia
-
-1. Faça um fork privado do repositório.
-2. Desenvolva os recursos.
-3. Conceda permissão de leitura para membros indicados.
-4. Aguarde a avaliação.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
