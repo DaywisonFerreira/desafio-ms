@@ -32,10 +32,13 @@ docker-compose up -d
 
 ## ☕ Uso
 
+### Documentação API
 Acesse o endpoint http://localhost:3000/api para interagir com a aplicação.
 
 ![Swagger](images/swagger.png)
 
+
+### Kafka UI
 Você pode acessar o kafka UI nesse endpoint: http://localhost:8080
 
 ![Kafka-UI](images/kafka.png)
