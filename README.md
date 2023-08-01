@@ -34,12 +34,11 @@ docker-compose up -d
 
 Acesse o endpoint http://localhost:3000/api para interagir com a aplicação.
 
-![Exemplo](images/swagger.png)
+![Swagger](images/swagger.png)
 
-Você pode enviar uma requisição HTTP para os endpoints disponíveis seguindo a documentação do Swagger. O Swagger fornece uma interface interativa que detalha os endpoints disponíveis, os parâmetros necessários, os tipos de resposta e exemplos de requisições.
+Você pode acessar o kafka UI nesse endpoint: http://localhost:8080
 
-Siga a documentação do Swagger para explorar e utilizar as funcionalidades do projeto.
-
+![Kafka-UI](images/kafka.png)
 
 ## 📝 Licença
 
