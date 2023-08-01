@@ -30,8 +30,8 @@ async function bootstrap() {
 
   const swaggerDocumentBuilder = new DocumentBuilder()
     .addBearerAuth()
-    .setTitle('NestJS API Documentation')
-    .setDescription('NestJS API Documentation')
+    .setTitle('Desafio MS - API Documentation')
+    .setDescription('Desafio MS - API Documentation')
     .setVersion('1.0')
     .build();
   const swaggerDocumentOptions: SwaggerDocumentOptions = {
