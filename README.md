@@ -2,13 +2,12 @@
 
 ## 💻 Pré-requisitos
 
-Antes de começar, verifique se você atendeu aos seguintes requisitos:
+Antes de começar, verifique se você atende aos seguintes requisitos:
 
 Você instalou o Docker e o docker-compose em sua máquina. Caso ainda não tenha instalado, você pode encontrar as instruções de instalação nos seguintes links:
 
-Docker: https://docs.docker.com/get-docker/
-Docker Compose: https://docs.docker.com/compose/install/
-Você tem uma máquina com suporte ao Docker. O projeto é compatível com sistemas operacionais Windows, Linux e macOS.
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
 ## 🚀 Instalação
 
