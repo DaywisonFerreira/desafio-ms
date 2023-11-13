@@ -25,6 +25,6 @@ jobs:
           type: "nodejs"
 
       - uses: actions/upload-artifact@v1
-      with:
-        name: sast-scan-reports
-        path: reports
+        with:
+          name: sast-scan-reports
+          path: reports
