@@ -17,9 +17,14 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
   sast_scan:
     if: github.event_name == 'pull_request' && github.event.action == 'opened' && github.event.pull_request.base.ref == 'main'
-    runs-on: ubuntu-latest
-    name: SAST Scan
-    steps: 
-    - uses: AppThreat/sast-scan-action@master
+    runs-on: ubuntu-latest    
+    steps:
+      - name: SAST Scan
+      - uses: AppThreat/sast-scan-action@master
+        with:
+          type: "nodejs"
+
+      - uses: actions/upload-artifact@v1
       with:
-        type: "nodejs"
+        name: sast-scan-reports
+        path: reports
